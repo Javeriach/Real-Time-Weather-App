@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: white;
+  --secondary-color: rgb(245, 238, 238);
+}
+.dark-theme {
+  --primary-color: white;
+  --secondary-color: black;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+  background-image: url(./Images/pexels-pixabay-209831.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.video1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.inputdiv {
+  width: 550px;
+}
+input {
+  width: 340px;
+  margin-right: 10px;
+  padding: 100px;
+}
+.box {
+  width: 415px;
+  height: auto;
+  background: var(--secondary-color);
+  padding: 10px;
+}
+.box_background {
+  background-image: url(./Images/clouds.jpg);
+  background-repeat: repeat-y;
+}
+
+#search {
+  background-color: rgb(247, 247, 250);
+}
+
+#search:hover {
+  background-color: blue;
+}
+
+#search i:hover {
+  color: white;
+}
+
+.tempSize {
+  font-size: 4rem;
+}
+#sun {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  color: white;
+  height: 90px;
+  width: 90px;
+  /* mix-blend-mode:darken; */
+}
+.changeColor {
+  filter: invert(27%) sepia(95%) saturate(2456%) hue-rotate(211deg)
+    brightness(94%) contrast(91%);
+  width: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 700px) {
+  input {
+    width: 260px;
+    height: 50px;
+    padding: 0px;
+    margin-left: 20px;
+  }
+  body {
+    width: 100%;
+    height: auto;
+    background-size: auto;
+  }
+  .box {
+    margin-top: auto;
+    width: 350px;
+    height: auto;
+    margin-left: 0;
+  }
+  body {
+    overflow-y: scroll;
+    height: auto;
+  }
+  #search {
+    height: 50px;
+    width: 70px;
+    font-size: 1rem;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  #darkBtn {
+    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  .video1 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  .fullHtml {
+    margin-left: 100px;
+  }
+
+  #msg {
+    width: 150px;
+  }
+}
